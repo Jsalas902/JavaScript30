@@ -64,9 +64,16 @@
             if (!audio) return; // Detener la función de ejecutarse todos juntos
             audio.currentTime = 0; // rebobinar hasta el comienzo
             audio.play();
+            key.classList.add('playing');
         });
         
-       
+        function removeTransition(e) {
+            if (e.propertyName !== 'transform') return; //
+            // console.log(this);
+            this.classList.remove('playing');
+        }
+        const keys = document.querySelectorAll('.key');
+        keys.forEach(key => key.addEventListener('transitionend', removeTransition));
     </script>
 </body>
 </html>
