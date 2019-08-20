@@ -1,6 +1,6 @@
 # Reloj analogico
 
-![screensot reloj](img/screenshot-reloj.png "Screenshot Reloj")
+![screensot reloj](img/screenshot_reloj.png "Screenshot Reloj")
 
 ## Construido con 🛠️
 
